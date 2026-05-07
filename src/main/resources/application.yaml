@@ -1,3 +1,14 @@
 spring:
   application:
     name: DataProducer
+
+  kafka:
+    bootstrap-servers: workspace:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+      properties:
+        compression.type: snappy
+        linger.ms: 10
+        batch.size: 131072
+        enable.idempotence: false

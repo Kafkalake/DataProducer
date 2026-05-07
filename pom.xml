@@ -5,27 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.5</version>
+		<version>3.3.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hooniegit</groupId>
 	<artifactId>DataProducer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<version>0.1.0</version>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -36,20 +22,26 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>com.hooniegit</groupId>
+			<artifactId>Xerializer</artifactId>
+			<version>2.1.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.hooniegit</groupId>
-			<artifactId>SourceData</artifactId>
-			<version>1.0.0</version>
+			<artifactId>DataStructure</artifactId>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 
